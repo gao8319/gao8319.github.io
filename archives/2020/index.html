@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="个人博客">
+<meta name="description" content="一条咸鱼">
 <meta property="og:type" content="website">
 <meta property="og:title" content="沧海寄余生">
 <meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
 <meta property="og:site_name" content="沧海寄余生">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="一条咸鱼">
 <meta property="article:author" content="橘小鶇">
 <meta name="twitter:card" content="summary">
 
@@ -157,7 +157,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">Hello World!</p>
+        <p class="site-subtitle"></p>
       
   </div>
 
@@ -336,7 +336,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">橘小鶇</p>
-              <p class="site-description motion-element" itemprop="description">个人博客</p>
+              <p class="site-description motion-element" itemprop="description">一条咸鱼</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -406,11 +406,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
@@ -438,6 +434,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -583,6 +585,43 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
